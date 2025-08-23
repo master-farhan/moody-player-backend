@@ -13,6 +13,7 @@ function uploadFile(file) {
       {
         file: file.buffer, // from multer
         fileName: new mongoose.Types.ObjectId().toString(), // unique ID as filename
+        folder: "Moody-Player"
       },
       (error, result) => {
         if (error) {
